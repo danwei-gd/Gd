@@ -1,0 +1,27 @@
+[submodule "CBS-AKS-GlobalFundTransfer"]
+	path = CBS-AKS-GlobalFundTransfer
+	url = https://github.com/Green-Dot-Corporation/CBS-AKS-GlobalFundTransfer.git
+[submodule "CBS-AKS-GlobalFundTransferOrchestrator"]
+	path = CBS-AKS-GlobalFundTransferOrchestrator
+	url = https://github.com/Green-Dot-Corporation/CBS-AKS-GlobalFundTransferOrchestrator.git
+[submodule "CBS-AKS-ExternalAccountTransfer"]
+	path = CBS-AKS-ExternalAccountTransfer
+	url = https://github.com/Green-Dot-Corporation/CBS-AKS-ExternalAccountTransfer.git
+[submodule "CBS-Transfers-ExternalCardTransferPull"]
+	path = CBS-Transfers-ExternalCardTransferPull
+	url = https://github.com/Green-Dot-Corporation/CBS-Transfers-ExternalCardTransferPull.git
+[submodule "CBS-ExternalCardTransferPush"]
+	path = CBS-ExternalCardTransferPush
+	url = https://github.com/Green-Dot-Corporation/CBS-ExternalCardTransferPush.git
+[submodule "CBS-MoneyMovement-FiservTcpService"]
+	path = CBS-MoneyMovement-FiservTcpService
+	url = https://github.com/Green-Dot-Corporation/CBS-MoneyMovement-FiservTcpService.git
+[submodule "Common-Gdot.GFT.Common"]
+	path = Common-Gdot.GFT.Common
+	url = https://github.com/Green-Dot-Corporation/Common-Gdot.GFT.Common.git
+[submodule "Common-Gd.Bos.Logging.Common"]
+	path = Common-Gd.Bos.Logging.Common
+	url = https://github.com/Green-Dot-Corporation/Common-Gd.Bos.Logging.Common.git
+[submodule "Common-Gd.Cbs.FiservTcpClient.Common"]
+	path = Common-Gd.Cbs.FiservTcpClient.Common
+	url = https://github.com/Green-Dot-Corporation/Common-Gd.Cbs.FiservTcpClient.Common.git
