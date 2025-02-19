@@ -1,0 +1,8 @@
+@model List<dynamic>
+
+<ul class="list-group">
+	@foreach (var profile in Model)
+	{
+	<li class="list-group-item">@profile.GlobalFundTransferProfileID</li>
+	}
+</ul>
