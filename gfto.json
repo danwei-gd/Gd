@@ -1,0 +1,27 @@
+{
+	"transferId": "b0369668-02de-48c1-b315-0558be2c6612",
+	"transferType": 9,
+	"initiator": "1a42172b-4aaf-4a9c-abe2-c4fe059707c2",
+	"transferRoute": {
+		"transactionAmount": 1,
+		"sourceTransferEndpoint": {
+			"transferEndpointType": 2,
+			"identifier": "7C9E98B8-C30A-4397-B3F5-A53933783EED",
+                        "cardHolderAuthenticationVerification":"AAABBCYNFYSNFXmQEjRWAAAAAA==",
+                        "ecommTransactionIndicator":"05",
+			"currency": "USD"
+		},
+		"targetTransferEndpoint": {
+			"transferEndpointType": 3,
+			"currency": "USD",
+			"paymentInstrument": {
+				"cardAccount": {
+					"accountNumber": "5102550000000044",
+					"expiryMonth": "10",
+					"expiryYear": "2027"
+				}
+			}
+		}
+	},
+        "fraudData": {"AuthenticationType": "Fingerprint"}
+}
