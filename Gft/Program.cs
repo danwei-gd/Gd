@@ -111,7 +111,17 @@ httpRequestMessage.Headers.Add("X-GD-RequestId", transferId);
 Console.WriteLine($"transferId: { transferId }");
 Console.WriteLine("---------------------------------------------------------------------------------");
 var response = await client.SendAsync(httpRequestMessage);
-
 Console.WriteLine(await response.Content.ReadAsStringAsync());
 
-
+Console.WriteLine("-----------------------------------------------Summary--------------------------------------------------");
+Console.WriteLine($"customerToken: {customerToken}");
+Console.WriteLine($"profileId: { profileId }");
+Console.WriteLine($"transferId: { transferId }");
+Console.WriteLine("-----------------------------------------------Sql--------------------------------------------------");
+Console.WriteLine(@$"
+select * from Customer where CustomerToken='{customerToken}'
+select * from CustomerPhone p join Customer c on p.CustomerKey=c.CustomerKey where c.CustomerToken = '{customerToken}'
+select * from CustomerEmail e join Customer c on e.CustomerKey=c.CustomerKey where c.CustomerToken = '{customerToken}'
+select * from GlobalFundTransfer(nolock) where GlobalFundTransferID='{transferId}'
+select * from GlobalFundTransferLedger(nolock) l join GlobalFundTransfer(nolock) t on l.GlobalFundTransferKey=t.GlobalFundTransferKey where GlobalFundTransferID='{transferId}'	
+");
